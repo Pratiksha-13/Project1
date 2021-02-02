@@ -1,0 +1,16 @@
+current directory: C:/Users/KaveriAndhale/Project1/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.5.1/ext/bootsnap
+C:/Users/KaveriAndhale/Ruby27-x64/bin/ruby.exe -I C:/Users/KaveriAndhale/Ruby27-x64/lib/ruby/2.7.0 -r ./siteconf20210114-10684-1cwak7l.rb extconf.rb
+creating Makefile
+
+current directory: C:/Users/KaveriAndhale/Project1/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.5.1/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: C:/Users/KaveriAndhale/Project1/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.5.1/ext/bootsnap
+make "DESTDIR="
+generating bootsnap-x64-mingw32.def
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: C:/Users/KaveriAndhale/Project1/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.5.1/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20210114-10684-adn0wi/bootsnap

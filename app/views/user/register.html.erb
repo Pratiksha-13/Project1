@@ -1,0 +1,31 @@
+<%= link_to "Back to home" , controller: "user", action: 'first', class: "back-link" %>
+
+<div class ="Page New">
+	<h2> Register</h2>
+
+	<%= form_for(:user, url: {controller:"user", action: 'register'}) do |t| %>
+
+	<table summary="Book form fields">
+
+		<tr>
+			<th> Name</th>
+			<td> <%= t.text_field(:name) %></td>
+		</tr>
+		<tr>
+			<th> Email</th>
+			<td> <%= t.text_field(:email) %></td>
+		</tr>
+
+
+		<tr>
+			<th> Password</th>
+			<td> <%= t.text_field(:password) %></td>
+		</tr>
+
+
+	</table>
+	<div class = "form-button">
+	     <%= submit_tag("Register")%>
+	 </div>
+	 <% end %>
+</div>	 

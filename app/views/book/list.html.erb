@@ -1,0 +1,73 @@
+<!--<h1> Books list </h1>
+
+
+<% if @books.blank? %>
+<p> There are not any books currently in the system.</p>
+<% else %>
+
+<p>These are the current books in our system</p>
+<ul id = "books">
+<% @books.each do |c| %>
+<li><%= link_to c.name, {:action => 'show' , :controller => 'book' , :id => c.id } -%></li>
+<% end %> 
+</ul>
+<% end %>
+<p><%= link_to "Add new Book", {:action => 'new', :controller => 'book'}%></p>
+<p><%= link_to "Home", {:action => 'Welcome', :controller => 'first'}%></p>        	 
+-->
+
+<% @book_title="Book" %>
+
+<%= link_to "Back to Home", controller: "book" , action: 'welcome', class: "back-link" %>
+
+
+<div class ="Book Index">
+	<h1> Books </h1>
+
+	<style>
+		table,th,td {
+		border:1px solid black;
+		border-collapse: collapse;	
+		} 
+		th, td {
+			padding: 15px;
+		}
+
+
+body{
+   background-image:url("/assets/bg2.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;	
+}
+
+	</style>
+
+
+
+
+	<%= link_to "Add New Book", controller: "book" , action: 'new', class: "action new" %>
+<br>
+	<br>
+	<table class ="listing" summary="book List" style = "width: 50%">
+		<tr class = "header">
+			<th> Name </th>
+			<th> Actions</th>
+		</tr>
+		<tr>
+		</tr>
+
+	    
+	    <% @book.each do |b| %>
+		    <tr class="<%= cycle('odd','even')%>">
+              <td> <%= b.name %> </td>
+              <td class = "action">
+               <%= link_to "Show", action: 'show' , id: b.id , class:  "action show" %>
+               <%= link_to "Edit", action: 'edit' , id: b.id , class:  "action edit" %>
+               <%= link_to "Delete", action: 'delete' , id: b.id , class:  "action delete" %>
+
+           </td>
+       </tr>
+       <% end %>
+   </table>
+</div>
+               		

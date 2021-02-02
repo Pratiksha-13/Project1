@@ -1,0 +1,14 @@
+current directory: C:/Users/KaveriAndhale/Project1/vendor/bundle/ruby/2.7.0/gems/nio4r-2.5.4/ext/nio4r
+C:/Users/KaveriAndhale/Ruby27-x64/bin/ruby.exe -I C:/Users/KaveriAndhale/Ruby27-x64/lib/ruby/2.7.0 -r ./siteconf20210114-10684-p6z6li.rb extconf.rb
+
+current directory: C:/Users/KaveriAndhale/Project1/vendor/bundle/ruby/2.7.0/gems/nio4r-2.5.4/ext/nio4r
+make "DESTDIR=" clean
+make: *** No rule to make target 'clean'.  Stop.
+
+current directory: C:/Users/KaveriAndhale/Project1/vendor/bundle/ruby/2.7.0/gems/nio4r-2.5.4/ext/nio4r
+make "DESTDIR="
+make: Nothing to be done for 'all'.
+
+current directory: C:/Users/KaveriAndhale/Project1/vendor/bundle/ruby/2.7.0/gems/nio4r-2.5.4/ext/nio4r
+make "DESTDIR=" install
+make: Nothing to be done for 'install'.

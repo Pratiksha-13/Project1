@@ -1,0 +1,2 @@
+class SecondController < ApplicationController
+end
